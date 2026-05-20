@@ -623,3 +623,40 @@ a { text-decoration: none !important; }
     font-size: 0.9rem;
 }
 /* === КОНЕЦ СТИЛЕЙ ДЛЯ СТРАНИЦЫ НОВОСТЕЙ === */
+/* === ФИНАЛЬНЫЕ ПРАВКИ: БЕЛЫЙ ТЕКСТ ВЕЗДЕ === */
+
+/* Главная: текст под карточками зон */
+.card-body-custom p {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+/* Главная: текст в боковой панели (Локация, Статус) */
+.sidebar-block p, .sidebar-block .text-muted {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+/* Новости: текст в карточках новостей */
+.card-news p.card-text.text-muted.small {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+/* Новости: текст в боковой панели (сайдбар новостей) */
+.sidebar-news p, .sidebar-news .text-muted {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+/* Тарифы: текст в карточках акций (снизу) */
+.card-promo p {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+/* Тарифы: описание самих тарифов */
+.card-tariffs p.card-text {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
