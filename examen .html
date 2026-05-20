@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANTHRACITE — Cyber Arena</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/style for examen doc.css">
+</head>
+<body>
+
+    
+    <header class="header-custom py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <div class="logo me-lg-5">
+                    <a href="index.html" class="logo-text">ANTHRACITE</a>
+                </div>
+                <nav class="d-none d-lg-block">
+                    <ul class="nav">
+                        <li class="nav-item"><a href="index.html" class="nav-link custom-link active">Главная</a></li>
+                        <li class="nav-item"><a href="prices.html" class="nav-link custom-link">Тарифы</a></li>
+                        <li class="nav-item"><a href="news.html" class="nav-link custom-link">Новости</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="auth-column d-flex flex-column align-items-end">
+                <a href="#" class="auth-link" data-bs-toggle="modal" data-bs-target="#loginModal"><i class="bi bi-box-arrow-in-right"></i> Вход</a>
+                <a href="#" class="auth-link" data-bs-toggle="modal" data-bs-target="#registerModal"><i class="bi bi-person-plus"></i> Регистрация</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row g-5">
+            
+            <section class="col-lg-9">
+                <h2 class="mb-5 text-white">Игровые зоны Anthracite</h2>
+                
+                <div class="row row-cols-1 row-cols-md-2 g-4 mb-5">
+                    
+                    <div class="col">
+                        <div class="game-card-square">
+                            <div class="card-img-wrapper"><img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=800" alt="Base"></div>
+                            <div class="card-body-custom">
+                                <h3 class="zone-title-neon">Base Zone</h3>
+                                <p class="text-muted small flex-grow-1">RTX 3060, i5-12400. Четкий конфиг для потных каток.</p>
+                                <a href="booking.html" class="btn-neon-outline">Забронировать</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="game-card-square">
+                            <div class="card-img-wrapper">
+                                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQHYKnHosrHwrIvZJs4qeEoKM4Dls0zLGuaAX8gWMCyXFS2qZBO1RPp3CJNMYcYQUWultlJ9JcDr3UWpM83KujL_yHpD25tmYVNR4-Borof&usqp=CAc" alt="Pro"></div>
+                            <div class="card-body-custom">
+                                <h3 class="zone-title-neon">Pro Arena</h3>
+                                <p class="text-muted small flex-grow-1">RTX 4080, i7-13700K. Мониторы 240Hz для профи.</p>
+                                <a href="booking.html" class="btn-neon-outline">Забронировать</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="game-card-square">
+                            <div class="card-img-wrapper"><img src="https://images.unsplash.com/photo-1603481588273-2f908a9a7a1b?q=80&w=800" alt="VIP"></div>
+                            <div class="card-body-custom">
+                                <h3 class="zone-title-neon">VIP Lounge</h3>
+                                <p class="text-muted small flex-grow-1">RTX 4090, i9. Только для тех, кто привык к лучшему.</p>
+                                <a href="booking.html" class="btn-neon-outline">Забронировать</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="game-card-square">
+                            <div class="card-img-wrapper"><img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800" alt="Bootcamp"></div>
+                            <div class="card-body-custom">
+                                <h3 class="zone-title-neon">Bootcamp</h3>
+                                <p class="text-muted small flex-grow-1">Закрытая комната на 5 человек для твоей команды.</p>
+                                <a href="booking.html" class="btn-neon-outline">Забронировать</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="game-card-square">
+                            <div class="card-img-wrapper"><img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?q=80&w=800" alt="Stream"></div>
+                            <div class="card-body-custom">
+                                <h3 class="zone-title-neon">Streamer Box</h3>
+                                <p class="text-muted small flex-grow-1">Камера, свет и мощный ПК. Начинай эфир прямо сейчас.</p>
+                                <a href="booking.html" class="btn-neon-outline">Забронировать</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="game-card-square">
+                            <div class="card-img-wrapper"><img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?q=80&w=800" alt="PS5"></div>
+                            <div class="card-body-custom">
+                                <h3 class="zone-title-neon">PS5 Relax</h3>
+                                <p class="text-muted small flex-grow-1">Мягкие диваны, 4K TV и самые свежие игры на PS5.</p>
+<a href="booking.html" class="btn-neon-outline">Забронировать</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="game-card-square">
+                            <div class="card-img-wrapper"><img src="https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?q=80&w=800" alt="VR"></div>
+                            <div class="card-body-custom">
+                                <h3 class="zone-title-neon">VR Station</h3>
+                                <p class="text-muted small flex-grow-1">Полное погружение в виртуальную реальность.</p>
+                                <a href="booking.html" class="btn-neon-outline">Забронировать</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="game-card-square">
+                            <div class="card-img-wrapper"><img src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?q=80&w=800" alt="Racing"></div>
+                            <div class="card-body-custom">
+                                <h3 class="zone-title-neon">Racing Sim</h3>
+                                <p class="text-muted small flex-grow-1">Почувствуй драйв настоящих гонок на руле и педалях.</p>
+                                <a href="booking.html" class="btn-neon-outline">Забронировать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-section mt-5">
+                    <h2 class="text-white mb-4">FAQ</h2>
+
+                    <div class="faq-group mb-4">
+                        <h4 class="text-neon mb-3"><i class="bi bi-cpu"></i> Оборудование и игры</h4>
+                        <div class="accordion accordion-dark" id="faq1">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q1">Какие у вас характеристики ПК?</button></h2>
+                                <div id="q1" class="accordion-collapse collapse" data-bs-parent="#faq1"><div class="accordion-body">Конфиги от RTX 3060 до RTX 4090 в VIP зоне. Процессоры последнего поколения i5/i7/i9.</div></div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2">Можно ли поиграть в свою игру?</button></h2>
+                                <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faq1"><div class="accordion-body">Да, вы можете зайти под своим аккаунтом Steam, Epic или Battle.net и установить любую игру.</div></div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3">Потянет ли на ультрах?</button></h2>
+                                <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faq1"><div class="accordion-body">В Pro и VIP зонах — абсолютно всё. В Base — большинство игр на высоких настройках.</div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-group mb-4">
+                        <h4 class="text-neon mb-3"><i class="bi bi-credit-card"></i> Бронирование и оплата</h4>
+                        <div class="accordion accordion-dark" id="faq2">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q4">Как забронировать?</button></h2>
+                                <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faq2"><div class="accordion-body">Через кнопку "Забронировать" на этом сайте или написав нам в соцсетях.</div></div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q5">Какие есть акции?</button></h2>
+                                <div id="q5" class="accordion-collapse collapse" data-bs-parent="#faq2"><div class="accordion-body">Действуют ночные пакеты "Night Out" и скидки 20% для именинников.</div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <aside class="col-lg-3 text-center">
+                <div class="sidebar-block p-4 mb-4">
+                    <h5>Локация</h5>
+                    <p class="text-muted small">Ул. Технологий, 404</p>
+                    <p class="text-neon fw-bold mb-0">24 / 7</p>
+                </div>
+                <div class="sidebar-block p-4">
+                    <h5>Статус</h5>
+                    <p class="text-success fw-bold mb-0"><i class="bi bi-check-circle"></i> Открыто</p>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <footer class="py-4 mt-5 border-top border-secondary">
+        <div class="container text-center text-white-50 small">&copy; 2024 ANTHRACITE.</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- окно регистрации -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content content-modal-neon">
+          <div class="modal-header border-bottom border-secondary">
+            <h5 class="modal-title neon-title" id="registerModalLabel">Регистрация</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="registrationForm">
+              <div class="mb-3">
+                <label for="username" class="form-label neon-label">Имя пользователя <span class="text-danger">*</span></label>
+                <input type="text" class="form-control neon-input" id="username" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label neon-label">Email <span class="text-danger">*</span></label>
+                <input type="email" class="form-control neon-input" id="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label neon-label">Пароль <span class="text-danger">*</span></label>
+                <input type="password" class="form-control neon-input" id="password" required>
+              </div>
+              <div class="mb-3">
+                <label for="confirmPassword" class="form-label neon-label">Подтвердите пароль <span class="text-danger">*</span></label>
+                <input type="password" class="form-control neon-input" id="confirmPassword" required>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input neon-checkbox" type="checkbox" id="terms" required>
+                <label class="form-check-label neon-label" for="terms">
+                  Согласен с <a href="#" class="text-neon-link">правилами</a> клуба
+                </label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer border-top border-secondary">
+            <button type="button" class="btn btn-outline-neon-hot" data-bs-dismiss="modal">Отмена</button>
+            <button type="submit" class="btn btn-neon-hot" form="registrationForm">Зарегистрироваться</button>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- окно входа -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content content-modal-neon">
+          <div class="modal-header border-bottom border-secondary">
+            <h5 class="modal-title neon-title" id="loginModalLabel">Вход</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="loginForm">
+              <div class="mb-3">
+                <label for="loginEmail" class="form-label neon-label">Email <span class="text-danger">*</span></label>
+                <input type="email" class="form-control neon-input" id="loginEmail" required>
+              </div>
+              <div class="mb-3">
+                <label for="loginPassword" class="form-label neon-label">Пароль <span class="text-danger">*</span></label>
+                <input type="password" class="form-control neon-input" id="loginPassword" required>
+              </div>
+              <div class="mb-3 form-check">
+                <input class="form-check-input neon-checkbox" type="checkbox" id="rememberMe">
+                <label class="form-check-label neon-label" for="rememberMe">
+                  Запомнить меня
+                </label>
+              </div>
+              <a href="#" class="text-neon-link float-end mb-3">Забыли пароль?</a>
+            </form>
+          </div>
+          <div class="modal-footer border-top border-secondary">
+            <button type="button" class="btn btn-outline-neon-hot" data-bs-dismiss="modal">Отмена</button>
+            <button type="submit" class="btn btn-neon-hot" form="loginForm">Войти</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+</body>
+</html>

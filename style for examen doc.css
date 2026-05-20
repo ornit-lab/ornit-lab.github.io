@@ -1,0 +1,625 @@
+/* ОБЩИЕ СТИЛИ */
+body {
+    background-color: #050505;
+    color: #e0e0e0;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+a { text-decoration: none !important; }
+
+/* HEADER */
+.header-custom {
+    background-color: #000;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.logo-text {
+    font-size: 2rem;
+    font-weight: 900;
+    color: Fuchsia !important;
+    filter: drop-shadow(0 0 10px Fuchsia) drop-shadow(0 0 15px Yellow); /* Вот эта строка! */
+    letter-spacing: 2px;
+}
+
+
+.custom-link {
+    color: #fff !important;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.custom-link:hover, .custom-link.active {
+    color: Fuchsia !important;
+    text-shadow: 0 0 10px Fuchsia;
+}
+
+.auth-link { color: #888 !important; font-size: 0.85rem; margin-bottom: 4px; }
+.auth-link:hover { color: Fuchsia !important; }
+
+/* КАРТОЧКИ: КВАДРАТНЫЕ */
+.game-card-square {
+    background: #0d0d0d;
+    border: 1px solid #222;
+    border-radius: 20px;
+    height: 100%;
+    aspect-ratio: 1 / 1; /* КВАДРАТ */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+.game-card-square:hover {
+    border-color: Fuchsia;
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(255, 0, 255, 0.2);
+}
+
+.card-img-wrapper {
+    height: 55%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body-custom {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* ЗАГОЛОВОК: Желтый + Красный неон */
+.zone-title-neon {
+    color: Yellow !important;
+    text-shadow: 0 0 8px Red, 0 0 15px Red;
+    font-weight: 800;
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+}
+
+/* КНОПКА */
+.btn-neon-outline {
+    border: 2px solid Fuchsia;
+    color: Fuchsia;
+    border-radius: 10px;
+    font-weight: 800;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 180px;
+    transition: 0.3s;
+}
+
+.btn-neon-outline:hover {
+    background: Fuchsia;
+    color: #fff;
+    box-shadow: 0 0 20px Fuchsia;
+}
+
+/* SIDEBAR & FAQ */
+.sidebar-block {
+    background: #0d0d0d;
+    border-radius: 15px;
+    border-top: 3px solid Fuchsia;
+}
+
+.text-neon { color: Fuchsia; }
+
+.accordion-item { background: #111 !important; border: 1px solid #222 !important; color: #fff !important; }
+.accordion-button { background: #111 !important; color: #fff !important; box-shadow: none !important; }
+.accordion-button:not(.collapsed) { color: Fuchsia !important; }
+
+/* АДАПТИВНОСТЬ */
+@media (max-width: 991px) {
+    .logo-text { font-size: 1.5rem; }
+    .game-card-square { aspect-ratio: auto; min-height: 400px; } /* На мобилках лучше убрать жесткий квадрат */
+}
+
+/* ... (остальной код CSS) */
+
+.card-body-custom {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* ЗАГОЛОВОК: Желтый + Красный неон */
+.zone-title-neon {
+    color: Yellow !important;
+    text-shadow: 0 0 8px Red, 0 0 15px Red;
+    font-weight: 800;
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+}
+
+/* ИСПРАВЛЕНО: Текст стал белым, а не тускло-серым */
+.card-body-custom p {
+    color: #ffffff !important; /* БЕЛЫЙ ТЕКСТ */
+    font-size: 0.9rem; /* Чуть уменьшил размер, чтобы лучше читалось */
+    flex-grow: 1;
+}
+
+/* КНОПКА */
+.btn-neon-outline {
+    border: 2px solid Fuchsia;
+    color: Fuchsia;
+    border-radius: 10px;
+    font-weight: 800;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 180px;
+    transition: 0.3s;
+}
+
+/* ... (остальной код CSS) */
+/* ... (остальной код CSS до этого места) */
+
+/* SIDEBAR & FAQ */
+.sidebar-block {
+    background: #0d0d0d;
+    border-radius: 15px;
+    border-top: 3px solid Fuchsia;
+}
+
+.sidebar-block h5 { /* Добавил стиль для заголовков в сайдбаре, чтобы они тоже были ярче */
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* ИСПРАВЛЕНО: Текст в сайдбаре стал белым */
+.sidebar-block p {
+    color: #00ff04 !important; /* БЕЛЫЙ ТЕКСТ */
+    opacity: 1 !important;
+    font-size: 0.9rem; /* Размер текста */
+    margin-bottom: 0; /* Убрал лишний нижний отступ */
+}
+
+/* Добавляем этот стиль, если ты используешь .text-muted внутри .sidebar-block */
+.sidebar-block .text-muted {
+    color: #fffb00 !important;
+    opacity: 0.85; /* Чуть менее яркий, чем заголовки, но всё равно белый */
+}
+
+.text-neon { color: Fuchsia; }
+
+/* ... (остальной код CSS после этого места) */
+/* === НОВЫЕ СТИЛИ ДЛЯ МОДАЛЬНОГО ОКНА === */
+
+/* Стиль самого модального окна */
+.content-modal-neon {
+    background-color: #0a0a0a;
+    border: 1px solid #333;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(255, 0, 255, 0.3); /* Фиолетовое свечение */
+}
+
+/* Заголовок модального окна */
+.neon-title {
+    color: Fuchsia !important;
+    text-shadow: 0 0 10px Fuchsia;
+    font-weight: 800;
+}
+
+/* Стиль плейсхолдеров и меток */
+.neon-label {
+    color: #ccc; /* Светло-серый для меток */
+    font-weight: 600;
+}
+
+/* Стиль инпутов */
+.neon-input {
+    background-color: #1a1a1a;
+    border: 1px solid #444;
+    color: #eee; /* Цвет текста в инпуте */
+    border-radius: 10px;
+    padding: 12px 15px;
+}
+
+.neon-input:focus {
+    border-color: Fuchsia;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.3);
+}
+
+/* Стиль чекбокса */
+.neon-checkbox {
+    accent-color: Fuchsia; /* Цвет самого чекбокса */
+    border-color: #555;
+}
+
+/* Кнопка "Отмена" внутри модалки */
+.btn-outline-neon-hot {
+    border-color: Fuchsia;
+    color: Fuchsia;
+    border-radius: 10px;
+    font-weight: 800;
+    padding: 10px 20px;
+    transition: all 0.3s;
+}
+
+.btn-outline-neon-hot:hover {
+    background: Fuchsia;
+    color: #fff;
+    box-shadow: 0 0 20px Fuchsia;
+}
+
+/* Кнопка "Зарегистрироваться" внутри модалки (огненное свечение) */
+.btn-neon-hot {
+    background: #ff9900; /* Огненный цвет */
+    border: 2px solid #ff9900;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 800;
+    padding: 10px 20px;
+    transition: all 0.3s;
+    box-shadow: 0 0 15px rgba(255, 153, 0, 0.5); /* Огненное свечение */
+}
+
+.btn-neon-hot:hover {
+    background: #ff6600; /* Темнее при наведении */
+    border-color: #ff6600;
+    box-shadow: 0 0 25px rgba(255, 102, 0, 0.7); /* Ярче свечение при наведении */
+}
+
+/* Ссылка в чекбоксе */
+.neon-label a {
+    color: Fuchsia !important;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.neon-label a:hover {
+    color: Yellow !important;
+    text-decoration: none;
+}
+
+/* === КОНЕЦ СТИЛЕЙ ДЛЯ МОДАЛЬНОГО ОКНА === */
+
+/* === НОВЫЕ СТИЛИ ДЛЯ МОДАЛЬНОГО ОКНА ВХОДА === */
+/* Используются те же стили, что и для регистрации, для единообразия */
+
+/* Стиль самого модального окна (такой же, как для регистрации) */
+.content-modal-neon {
+    background-color: #0a0a0a;
+    border: 1px solid #333;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(255, 0, 255, 0.3); /* Фиолетовое свечение */
+}
+
+/* Заголовок модального окна (такой же) */
+.neon-title {
+    color: Fuchsia !important;
+    text-shadow: 0 0 10px Fuchsia;
+    font-weight: 800;
+}
+
+/* Стиль плейсхолдеров и меток (такой же) */
+.neon-label {
+    color: #ccc; /* Светло-серый для меток */
+    font-weight: 600;
+}
+
+/* Стиль инпутов (такой же) */
+.neon-input {
+    background-color: #1a1a1a;
+    border: 1px solid #444;
+    color: #eee; /* Цвет текста в инпуте */
+    border-radius: 10px;
+    padding: 12px 15px;
+}
+
+.neon-input:focus {
+    border-color: Fuchsia;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.3);
+}
+
+/* Стиль чекбокса (такой же) */
+.neon-checkbox {
+    accent-color: Fuchsia; /* Цвет самого чекбокса */
+    border-color: #555;
+}
+
+/* Кнопка "Отмена" внутри модалки (такая же) */
+.btn-outline-neon-hot {
+    border-color: Fuchsia;
+    color: Fuchsia;
+    border-radius: 10px;
+    font-weight: 800;
+    padding: 10px 20px;
+    transition: all 0.3s;
+}
+
+.btn-outline-neon-hot:hover {
+    background: Fuchsia;
+    color: #fff;
+    box-shadow: 0 0 20px Fuchsia;
+}
+
+/* Кнопка "Войти" внутри модалки (такая же, как "Зарегистрироваться") */
+.btn-neon-hot {
+    background: #ff9900; /* Огненный цвет */
+    border: 2px solid #ff9900;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 800;
+    padding: 10px 20px;
+    transition: all 0.3s;
+    box-shadow: 0 0 15px rgba(255, 153, 0, 0.5); /* Огненное свечение */
+}
+
+.btn-neon-hot:hover {
+    background: #ff6600; /* Темнее при наведении */
+    border-color: #ff6600;
+    box-shadow: 0 0 25px rgba(255, 102, 0, 0.7); /* Ярче свечение при наведении */
+}
+
+/* Ссылка "Забыли пароль?" */
+.text-neon-link.float-end { /* Добавил float-end, чтобы ссылка была справа */
+    color: Fuchsia !important;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.text-neon-link.float-end:hover {
+    color: Yellow !important;
+    text-decoration: none;
+}
+
+/* === КОНЕЦ СТИЛЕЙ ДЛЯ МОДАЛЬНОГО ОКНА ВХОДА === */
+
+
+.neon-title-page {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-shadow: 0 0 15px Fuchsia, 0 0 25px Yellow;
+    margin-bottom: 30px;
+}
+
+.card-tariffs {
+    background-color: #0d0d0d;
+    border: 1px solid #222;
+    border-radius: 20px;
+    height: 100%; /* Чтобы карты занимали всю высоту колонки */
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s ease;
+}
+
+.card-tariffs:hover {
+    border-color: Fuchsia;
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(255, 0, 255, 0.2);
+}
+
+.neon-card-header {
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #333;
+    border-radius: 18px 18px 0 0; /* Скругляем верхние углы */
+    padding: 20px 15px;
+    text-align: center;
+}
+
+.neon-card-header-vip { /* Для VIP карточки */
+    background-color: #2a0a2a; /* Более темный фиолетовый */
+    border-bottom: 1px solid #550055;
+}
+
+.neon-title-card {
+    color: Yellow !important;
+    text-shadow: 0 0 10px Red, 0 0 20px Red;
+    font-weight: 900;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.neon-title-card-vip { /* Для VIP карточки */
+    color: Yellow !important;
+    text-shadow: 0 0 15px Yellow, 0 0 25px Yellow; /* Золотое свечение */
+}
+
+.card-tariffs .card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.card-tariffs p {
+    color: #bbb !important; /* Светло-серый для описания */
+    font-size: 0.9rem;
+}
+
+.price-display {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.neon-price {
+    color: Fuchsia;
+    text-shadow: 0 0 10px Fuchsia, 0 0 20px Fuchsia;
+    font-weight: 900;
+}
+
+.neon-price .current-price {
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+.neon-price .price-unit {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+.tarif-features {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.neon-features li {
+    margin-bottom: 10px;
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+.neon-features li i {
+    color: LimeGreen; /* Зеленая галочка */
+    margin-right: 12px;
+    font-size: 1.2rem;
+}
+
+.neon-features li .bi-x-circle-fill {
+    color: Red; /* Красный крестик */
+}
+
+.btn-neon-hot { /* Используем ту же кнопку, что и для модалок */
+    background: #ff9900;
+    border: 2px solid #ff9900;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 800;
+    padding: 12px 20px;
+    transition: all 0.3s;
+    box-shadow: 0 0 15px rgba(255, 153, 0, 0.5);
+}
+
+.btn-neon-hot:hover {
+    background: #ff6600;
+    border-color: #ff6600;
+    box-shadow: 0 0 25px rgba(255, 102, 0, 0.7);
+}
+
+/* Карточка акции */
+.card-promo {
+    background: #0d0d0d;
+    border: 1px solid #222;
+    border-radius: 20px;
+    padding: 25px;
+    height: 100%;
+    transition: 0.4s ease;
+}
+
+.card-promo:hover {
+    border-color: Fuchsia;
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(255, 0, 255, 0.2);
+}
+
+.card-promo h4 {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.card-promo h4 i {
+    margin-right: 10px;
+    color: Fuchsia;
+}
+/* === КОНЕЦ СТИЛЕЙ ДЛЯ СТРАНИЦЫ ТАРИФОВ === */
+
+/* === СТИЛИ ДЛЯ СТРАНИЦЫ НОВОСТЕЙ (news.html) === */
+
+.card-news {
+    background-color: #0d0d0d;
+    border: 1px solid #222;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-news:hover {
+    border-color: Fuchsia;
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(255, 0, 255, 0.2);
+}
+
+.card-news .card-img-top {
+    height: 300px; /* Фиксированная высота для изображений */
+    object-fit: cover;
+    border-radius: 0; /* Чтобы картинка была без скругления, примыкала к верху */
+}
+
+.card-news .card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-news .neon-title-card {
+    font-size: 1.7rem;
+    margin-bottom: 8px;
+}
+
+.card-news .card-subtitle {
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+.card-news .card-subtitle i {
+    margin-right: 5px;
+    color: Fuchsia;
+}
+
+.card-news p.card-text.text-muted.small {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Боковая панель новостей */
+.sidebar-news {
+    background-color: #0d0d0d;
+    border: 1px solid #222;
+    border-radius: 20px;
+    padding: 20px;
+    height: 100%;
+    transition: 0.4s ease;
+}
+
+.sidebar-news:hover {
+    border-color: Fuchsia;
+    box-shadow: 0 10px 20px rgba(255, 0, 255, 0.15);
+}
+
+.sidebar-news h4 {
+    margin-bottom: 20px;
+    color: Yellow !important;
+    text-shadow: 0 0 10px Red;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.sidebar-news ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.sidebar-news li {
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #333;
+    padding-bottom: 15px;
+}
+
+.sidebar-news li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.sidebar-news p {
+    margin-bottom: 0 !important;
+    font-size: 0.9rem;
+}
+/* === КОНЕЦ СТИЛЕЙ ДЛЯ СТРАНИЦЫ НОВОСТЕЙ === */
