@@ -568,11 +568,12 @@ a { text-decoration: none !important; }
     opacity: 0.7;
 }
 
-.card-news .card-subtitle i {
-    margin-right: 5px;
-    color: Fuchsia;
-}
-
+    .card-news .card-subtitle {
+        color: #ffffff !important; /* ИСПРАВЛЕНО: Текст даты/подзаголовка стал белым */
+        font-size: 0.85rem;
+        opacity: 1; /* Сделал полностью непрозрачным, чтобы был ярко-белым */
+    }
+    
 .card-news p.card-text.text-muted.small {
     font-size: 0.95rem;
     line-height: 1.5;
@@ -660,3 +661,17 @@ a { text-decoration: none !important; }
     color: #ffffff !important;
     opacity: 1 !important;
 }
+
+    /* Стиль для слова "Открыто" в сайдбаре - ярко-зеленый неон */
+    .sidebar-block p.text-success {
+        color: LimeGreen !important; /* Яркий зеленый цвет */
+        text-shadow: 0 0 8px LimeGreen, 0 0 15px DarkGreen; /* Неоновое свечение */
+        font-weight: 900 !important; /* Сделаем его очень жирным, чтобы выделялся */
+    }
+
+    /* Иконка галочки тоже пусть будет зеленой */
+    .sidebar-block p.text-success i {
+        color: LimeGreen !important;
+        text-shadow: 0 0 5px LimeGreen;
+    }
+    
