@@ -568,11 +568,13 @@ a { text-decoration: none !important; }
     opacity: 0.7;
 }
 
-    .card-news .card-subtitle {
-        color: #ffffff !important; /* ИСПРАВЛЕНО: Текст даты/подзаголовка стал белым */
+        .card-news .card-subtitle {
+        color: Fuchsia !important; /* ИСПРАВЛЕНО: Текст даты/подзаголовка стал Fuchsia */
         font-size: 0.85rem;
-        opacity: 1; /* Сделал полностью непрозрачным, чтобы был ярко-белым */
+        opacity: 1; /* Оставим полную непрозрачность, чтобы цвет был насыщенным */
     }
+    
+
     
 .card-news p.card-text.text-muted.small {
     font-size: 0.95rem;
